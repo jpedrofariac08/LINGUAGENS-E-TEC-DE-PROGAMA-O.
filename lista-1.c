@@ -116,7 +116,7 @@ printf("\n");
     meses = diasdevida / 30;
     dias = diasdevida % 30;
 
-    printf("voce tem: %d anos, %d meses, %d dias de vida", anos, meses, dias);
+    printf("voce tem: %d ano, %d meses e %d dias de vida", anos, meses, dias);
 	
 	
 	
