@@ -29,6 +29,7 @@ int main(int argc, char *argv[]) {
 	printf("em notacao cientifica: %e \n", valor);
 	
 	/* 3- Implemente um programa que leia um numero n e mostre na tela o seu valor em base binaria(bits)! */
+	
     int n;
 int resto;
 int bits[10];
@@ -64,6 +65,7 @@ for (i = contador - 1; i >= 0; i--) {
     printf("%d", bits[i]);
 }
 printf("\n");
+	
     /* 4- Faça um programa que leia, o salário fixo e o valor total em vendas de um vendedor.
     Sabendo que este vendedor ganha 15% de comissão sobre suas vendas efetuadas, mostre o total a
     receber no final do mês, com duas casas decimais. */
@@ -78,6 +80,7 @@ printf("\n");
 
         salarioTOTAL = salario + (vendas * 0.15);
         printf ("o salario total equivale: %f \n", salarioTOTAL);
+	
 	/* 5- Elabore um programa que peça ao usuario digitar 4 valores, e mostre na tela a soma, a media e o produtorio dos 4 valores! */
 	
 	float num1, num2, num3, num4, soma, media, produtorio;
@@ -101,5 +104,24 @@ printf("\n");
 	printf("a soma dos numeros vale: %f \n", soma);
 	printf("a media dos numeros vale: %f \n", media);
 	printf("o produtorio dos numeros vale: %f \n", produtorio);
+	
+	/* 6- Leia um valor inteiro correspondente à idade de uma pessoa em dias e informe-a em anos, meses e dias. */
+	
+	int diasdevida, anos, meses, dias;
+    
+    printf("insira quantos dias de vida voce tem:");
+    scanf("%d", &diasdevida);
+    anos = diasdevida / 365;
+    diasdevida = diasdevida % 365;
+    meses = diasdevida / 30;
+    dias = diasdevida % 30;
+
+    printf("%d anos, %d meses, %d dias", anos, meses, dias);
+	
+	
+	
+	
+	
+	
 	return 0;
 }
