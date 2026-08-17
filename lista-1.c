@@ -118,9 +118,14 @@ printf("\n");
 
     printf("voce tem: %d ano, %d meses e %d dias de vida", anos, meses, dias);
 	
+	/* 7- programa que realiza o calculo do volume de uma esfera inserindo o valor do raio! */
 	
-	
-	
+	float raio, volume, pi;
+    pi = 3.14159;
+    printf("\ninsira o valor raio da esfera:");
+    scanf("%f", &raio);
+    volume =((4.0 / 3) * pi * raio * raio * raio);
+    printf("o volume da esfera vale:%f", volume);
 	
 	
 	return 0;
