@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <math.h>
 /* 1- Leia 2 numeros inteiros e escreva na ordem inversa! */
 
 int main(int argc, char *argv[]) {
@@ -127,6 +127,21 @@ printf("\n");
     volume =((4.0 / 3) * pi * raio * raio * raio);
     printf("o volume da esfera vale:%f", volume);
 	
-	
+	/* 8- leia 4 valores em planos cartesianos e calcule a distancia euclidiana entre eles! */
+    
+    double x1, y1, x2, y2, distancia;
+    printf("\ninsira o primeiro valor: ");
+        scanf("%lf", &x1);
+    printf("insira o segundo valor: ");
+        scanf("%lf", &y1);
+    printf("insira o terceiro valor: ");
+        scanf("%lf", &x2);
+    printf("insira o quarto valor: ");
+        scanf("%lf", &y2);
+    distancia = sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
+                    
+    printf("a distancia euclidiana vale: %.4lf");
+                    
+
 	return 0;
 }
