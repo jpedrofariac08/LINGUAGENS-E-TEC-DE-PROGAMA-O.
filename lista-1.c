@@ -17,7 +17,7 @@ int main(int argc, char *argv[]) {
 	primeiro = segundo;
 	segundo = aux;
 	
-	printf(" %d \n %d\n", primeiro, segundo);
+	printf("\n %d \n %d\n", primeiro, segundo);
 	
 	/* 2- Faça um programa que leia um valor do tipo double e depois imprima na forma de notação cientifica! */
 	
@@ -26,53 +26,40 @@ int main(int argc, char *argv[]) {
 	printf("insira um valor: \n");
 	scanf("%lf", &valor);
 	
-	printf("em notacao cientifica: %e \n", valor);
+	printf("em notacao cientifica: %.1e \n", valor);
 	
 	/* 3- Implemente um programa que leia um numero n e mostre na tela o seu valor em base binaria(bits)! */
 	
-    int n;
-int resto;
-int bits[10];
-int contador = 0;
-
-printf("Digite um numero: ");
-scanf("%d", &n);
-
-while (n > 0) {
-    resto = n % 2;
-    bits[contador] = resto;
-    contador++;
-
-    n = n / 2;
-}
-
-int i;
-
-printf("A conversao para binario resulta: ");
-
-for (i = 6; i >= 0; i--) {
-    if (i < contador)
-        printf("%d", bits[i]);
-    else
-        printf("0");
-}
-
-printf("\n");
+    int n, n0, bit64, bit32, bit16, bit8, bit4, bit2, bit1;
 
 
-printf("a conversao para binario resulta: ");
-for (i = contador - 1; i >= 0; i--) {
-    printf("%d", bits[i]);
-}
-printf("\n");
-	
+    printf("Digite um numero para ser convertido para bits: ");
+        scanf("%d", &n);
+    n0 = n;
+    bit64 = n%2;
+    n /= 2;
+    bit32 = n%2;
+    n /= 2;
+    bit16 = n%2;
+    n /= 2;
+    bit8 = n%2;
+    n /= 2;
+    bit4 = n%2;
+    n /= 2;
+    bit2 = n%2;
+    n /= 2;
+     bit1 = n%2;
+    n /= 2;
+
+    printf("o numero %d em binario = %d%d%d%d%d%d%d", n0, bit1, bit2, bit4, bit8, bit16, bit32, bit64);
+
     /* 4- Faça um programa que leia, o salário fixo e o valor total em vendas de um vendedor.
     Sabendo que este vendedor ganha 15% de comissão sobre suas vendas efetuadas, mostre o total a
     receber no final do mês, com duas casas decimais. */
     
     float salario, vendas, salarioTOTAL;
     
-    printf("insira o valor do salario: \n");
+    printf("\ninsira o valor do salario: \n");
         scanf("%f", &salario);
 
     printf("insira o valor total de vendas do vendedor: \n");
