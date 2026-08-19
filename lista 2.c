@@ -27,4 +27,14 @@ printf("valor da cotacao em dolar agora: ");
 dolar = (real / cotacao);
 printf("%.2fR$ cotados para o valor em dolar resulta: $%.2f ", real, dolar);
 
+/* 4-transformar celsius para fahrenheit! */
+    
+float c, f;
+    
+    printf("\ndigite um valor em graus celsius:");
+        scanf("%f", &c);
+    f = c * (9.0 / 5.0) + 32;
+
+    printf("a conversao de %.2f°C em fahrenheit é: %.2f°F", c, f);
+return 0;
 }
