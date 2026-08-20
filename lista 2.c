@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 int main()
 {
 /* 1-calcular ano de nascimento a partir da idade e do ano atual! */
@@ -84,6 +85,25 @@ float c, f;
         scanf("%f", &velocidade);
     printf("a distancia percorrida durante a viagem vale: %.2fKM\n", tempo1 * velocidade);
     printf("o gasto em litros durante a viagem foi de: %.3f litros", (tempo1 * velocidade) / 12);
+
+    /* 10- Faça um programa que leia  valores e apresente o maior dos 3 valores seguido da mensagem "eh o maior"!*/
+    
+    int a, b, c, maior_temp, maior;
+    printf(" \ninforme os valores a serem comparados:\n");
+        scanf("%d %d %d", &a, &b, &c);
+    maior = (a + b + abs (a-b))/2;
+    maior_temp = (maior + c +abs (maior-c))/2;
+    printf(" entre  os numeros %d, %d, %d, o maior entre eles vale = %d\n", a, b, c, maior_temp);
+
+    /* 11- Faça um programa que leia  valores e apresente o maior dos 4 valores seguido da mensagem "eh o maior"!*/
+    
+    int a1, b1, c1, d1, maior1, maiortemp, maior2;
+    printf(" \ninforme os valores a serem comparados:\n");
+        scanf("%d %d %d %d", &a1, &b1, &c1, &d1);
+    maior1 = (a1 + b1 + abs (a1-b1))/2;
+    maior2 = (c1 + d1 + abs (c1-d1))/2;
+    maiortemp = (maior1 + maior2 + abs(maior1-maior2))/2;
+    printf(" entre  os numeros %d, %d, %d, %d, o maior entre eles vale = %d", a1, b1, c1, d1, maiortemp);
     
     return 0;
 }
