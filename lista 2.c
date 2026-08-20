@@ -53,5 +53,14 @@ float c, f;
         scanf("%d", &n);
     printf("o antecessor de %d é: %d \n", n, n - 1);
     printf("o sucessor de %d é: %d ", n, n + 1);
+    
+    /* 7- um concurso tem 780.000 mil de premiação o 1 colocado leva 46%, o segundo leva 32%, e o terceiro leva 22% */
+
+    float premiação;
+    premiação = 780000;
+    printf("\nO primeiro colocado leva: R$%.2f\n", premiação * 0.46);
+    printf("O segundo colocado leva: R$%.2f\n", premiação * 0.32);
+    printf("O terceiro colocado leva: R$%.2f\n", premiação * 0.22);
+    
     return 0;
 }
