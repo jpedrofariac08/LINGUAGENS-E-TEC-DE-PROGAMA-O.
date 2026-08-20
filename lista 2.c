@@ -30,13 +30,13 @@ printf("%.2fR$ cotados para o valor em dolar resulta: $%.2f ", real, dolar);
 
 /* 4-transformar celsius para fahrenheit! */
     
-float c, f;
+float cl, f;
     
     printf("\ndigite um valor em graus celsius:");
-        scanf("%f", &c);
-    f = c * (9.0 / 5.0) + 32;
+        scanf("%f", &cl);
+    f = cl * (9.0 / 5.0) + 32;
 
-    printf("a conversao de %.2f°C em fahrenheit é: %.2f°F", c, f);
+    printf("a conversao de %.2f°C em fahrenheit é: %.2f°F", cl, f);
 
     /* 5-Leia um ângulo em graus e apresente-o convertido em radianos. */
 
