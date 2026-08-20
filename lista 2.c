@@ -41,9 +41,17 @@ float c, f;
 
     float angulo, pi, radianos;
     pi = 3.141592;
-    printf("digite um angulo em graus: ");
+    printf("\ndigite um angulo em graus: ");
         scanf("%f", &angulo);
     radianos = angulo * (pi/180);
     printf("o angulo %.2f em radianos vale: %f", angulo, radianos);
-return 0;
+
+    /* 6- Programa que receba um numero inteiro e resulte seu antecessor e sucessor! */
+
+    int n;
+    printf("\ndigite um numero: ");
+        scanf("%d", &n);
+    printf("o antecessor de %d é: %d \n", n, n - 1);
+    printf("o sucessor de %d é: %d ", n, n + 1);
+    return 0;
 }
