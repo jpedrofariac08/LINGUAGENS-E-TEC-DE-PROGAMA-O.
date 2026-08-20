@@ -61,6 +61,19 @@ float c, f;
     printf("\nO primeiro colocado leva: R$%.2f\n", premiação * 0.46);
     printf("O segundo colocado leva: R$%.2f\n", premiação * 0.32);
     printf("O terceiro colocado leva: R$%.2f\n", premiação * 0.22);
+
+    /* 8- Leia um tempo em segundos de uma operação em uma fabrica, de o tempo em horas, minutos e segundos! */
+
+    int tempo, horas, minutos, segundos;
+    printf("insira um valor em segundos: ");
+        scanf("%d", &tempo);
+    horas = tempo / 3600;
+    tempo = tempo % 3600;
+    minutos = tempo / 60;
+    tempo = tempo % 60;
+    segundos = tempo % 60;
+
+    printf("O valor do tempo convertido vale: %d horas, %d minutos, %d segundos", horas, minutos, segundos);
     
     return 0;
 }
