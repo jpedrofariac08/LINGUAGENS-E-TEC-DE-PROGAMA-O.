@@ -77,13 +77,13 @@ float c, f;
 
     /* 9- Programa que faça o calculo de distancia em km, tempo, velocidade e gasto de gasolina */
     
-    float velocidade, tempo;
+    float velocidade, tempo1;
     printf("\ninsira o tempo da viagem em horas: ");
-        scanf("%f", &tempo);
+        scanf("%f", &tempo1);
     printf("insira a velocidade em km/h: ");
         scanf("%f", &velocidade);
-    printf("a distancia percorrida durante a viagem vale: %.2fKM\n", tempo * velocidade);
-    printf("o gasto em litros durante a viagem foi de: %.3f litros", (tempo * velocidade) / 12);
+    printf("a distancia percorrida durante a viagem vale: %.2fKM\n", tempo1 * velocidade);
+    printf("o gasto em litros durante a viagem foi de: %.3f litros", (tempo1 * velocidade) / 12);
     
     return 0;
 }
