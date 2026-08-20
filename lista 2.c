@@ -36,5 +36,14 @@ float c, f;
     f = c * (9.0 / 5.0) + 32;
 
     printf("a conversao de %.2f°C em fahrenheit é: %.2f°F", c, f);
+
+    /* 5-Leia um ângulo em graus e apresente-o convertido em radianos. */
+
+    float angulo, pi, radianos;
+    pi = 3.141592;
+    printf("digite um angulo em graus: ");
+        scanf("%f", &angulo);
+    radianos = angulo * (pi/180);
+    printf("o angulo %.2f em radianos vale: %f", angulo, radianos);
 return 0;
 }
