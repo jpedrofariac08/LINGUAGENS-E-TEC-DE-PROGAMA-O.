@@ -74,6 +74,16 @@ float c, f;
     segundos = tempo % 60;
 
     printf("O valor do tempo convertido vale: %d horas, %d minutos, %d segundos", horas, minutos, segundos);
+
+    /* 9- Programa que faça o calculo de distancia em km, tempo, velocidade e gasto de gasolina */
+    
+    float velocidade, tempo;
+    printf("\ninsira o tempo da viagem em horas: ");
+        scanf("%f", &tempo);
+    printf("insira a velocidade em km/h: ");
+        scanf("%f", &velocidade);
+    printf("a distancia percorrida durante a viagem vale: %.2fKM\n", tempo * velocidade);
+    printf("o gasto em litros durante a viagem foi de: %.3f litros", (tempo * velocidade) / 12);
     
     return 0;
 }
