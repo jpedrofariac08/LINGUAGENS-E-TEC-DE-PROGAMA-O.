@@ -49,5 +49,14 @@ if (e % 2){
 else{
     printf("\n%d é par!", e);
 }
+    
+/* ler um numero e informar se ele e par ou impar! */
+int numero;
+printf("digite um numero: ");
+    scanf("%d", &numero);
+
+if (numero > 0){
+    printf("%d%", numero - (2 * numero));
+}
 return 0;
 }
