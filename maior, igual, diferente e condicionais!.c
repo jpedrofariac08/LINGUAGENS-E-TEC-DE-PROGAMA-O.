@@ -36,6 +36,7 @@ printf("\n%d eh o maior!\n", R);
 int d,e;
 printf("\ndigite os valores correspondentes a [d], [e]\n");
     scanf("%d %d", &d, &e);
+printf("logo:");
 if (d % 2){
     printf("\n%d é impar!", d);
 }
