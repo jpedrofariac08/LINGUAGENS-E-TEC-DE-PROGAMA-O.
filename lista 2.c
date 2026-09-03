@@ -104,6 +104,68 @@ float cl, f;
     maior2 = (c1 + d1 + abs (c1-d1))/2;
     maiortemp = (maior1 + maior2 + abs(maior1-maior2))/2;
     printf(" entre  os numeros %d, %d, %d, %d, o maior entre eles vale = %d", a1, b1, c1, d1, maiortemp);
+
+    /* treino de exercicio para a AEP! */
+   int aux, aux1, aux2, aux3, aux4;
+    char cadastrar_acao[100], listar_acao[100], pesquisar_acoes[100], atualizar_situacao[100], registrar_participantes, gerar_resumo;
+   
     
+    do{
+        printf("PROGRAMA SAUDE NA ESCOLA!");
+        printf("\n-----------Menu-----------");
+        printf("\n1-Cadastrar ação.\n2-Listar ação.\n3-Pesquisar ações.\n4-Atualizar situação.\n5-Registrar participantes.\n6-Gerar resumo.");
+        printf("\nInsira o número da opção desejada: ");
+        scanf("%d", &aux);
+
+    if (aux == 1){
+        printf("Cadestre a ação desejada: ");
+        scanf(" %99[^\n]", cadastrar_acao);
+        printf("Ação cadastrada!");
+        printf("\n1-Encerrar programa\n2-Voltar ao menu\n");
+        scanf("\n%d", &aux1);
+        if (aux1 == 1){
+            printf("Programa encerrado");
+            break;
+            return 0;
+        }
+    }
+     else if (aux == 2){
+            printf("\nListe a ação desejada: ");
+            scanf(" %99[^\n]", listar_acao);
+            printf("Ação listada!");
+            printf("\n1-Encerrar programa\n2-Voltar ao menu\n");
+            scanf("\n%d", &aux2);
+        if (aux2 == 1){
+            printf("Programa encerrado");
+            break;
+            return 0;
+        }
+    } 
+    else if (aux == 3){
+            printf("\nPesquise a ação desejada: ");
+            scanf(" %99[^\n]", pesquisar_acoes);
+            printf("%c", cadastrar_acao);
+            printf("\n1-Encerrar programa\n2-Voltar ao menu\n");
+            scanf("\n%d", &aux3);
+        if (aux3 == 1){
+            printf("Programa encerrado");
+            break;
+            return 0;
+        }  
+    }
+    else if (aux == 4){
+            printf("Atualize a situação: ");
+            scanf(" %99[^\n]", atualizar_situacao);
+            printf("\nSituação atualizada!");
+            printf("\n1-Encerrar programa\n2-Voltar ao menu\n");
+            scanf("\n%d", &aux4);
+       if (aux4 == 1){
+          printf("programa encerrado");
+          break;
+          return 0;
+       }
+    }           
+}
+while (aux1 == 2 || aux2 == 2 || aux3 ==2 || aux4 == 2 );
     return 0;
 }
