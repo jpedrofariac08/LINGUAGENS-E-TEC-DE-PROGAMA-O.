@@ -105,7 +105,7 @@ float cl, f;
     maiortemp = (maior1 + maior2 + abs(maior1-maior2))/2;
     printf(" entre  os numeros %d, %d, %d, %d, o maior entre eles vale = %d", a1, b1, c1, d1, maiortemp);
 
-    /* treino de exercicio para a AEP! */
+    /* treino de exercicio para a AEP, ultilizando else if, do, break e aux(pretendo ultilizar switch e case! */
    int aux, aux1, aux2, aux3, aux4;
     char cadastrar_acao[100], listar_acao[100], pesquisar_acoes[100], atualizar_situacao[100], registrar_participantes, gerar_resumo;
    
