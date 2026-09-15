@@ -76,15 +76,15 @@ void exercicio_3(){
     printf("Media: %.1f\n", media);
 
     if (media >= 70.0 && media <=100){
-        printf("\033[34mAprovado\033[0m\n");
+        printf("Aprovado\n");
     } 
     else if (media >= 40.0 && media < 70.0){
         float falta = 100.0 - media;
-        printf("\033[32mExame\033[0m\n");
+        printf("Exame");
         printf("Faltam %.1f pontos para atingir 10.0.\n", falta);
     } 
     else {
-        printf("\033[31mReprovado\033[0m\n");
+        printf("Reprovado\n");
     }
 }
 }
