@@ -31,6 +31,58 @@ else
 return 0;
 }
 
+//exercicio 5
+#include <stdio.h>
+#include <stdlib.h>
+
+int calcular_saque(int valor) {
+
+    int nota100, nota50, nota10, nota5, nota2, nota1;
+
+    nota100 = valor / 100;
+    valor = valor % 100;
+
+    nota50 = valor / 50;
+    valor = valor % 50;
+
+    nota10 = valor / 10;
+    valor = valor % 10;
+
+    nota5 = valor / 5;
+    valor = valor % 5;
+
+    nota2 = valor / 2;
+    valor = valor % 2;
+
+    nota1 = valor / 1;
+
+    printf("\n---------- RESUMO DO SAQUE ----------\n");
+
+    printf("Notas de R$ 100: %d\n", nota100);
+    printf("Notas de R$ 50 : %d\n", nota50);
+    printf("Notas de R$ 10 : %d\n", nota10);
+    printf("Notas de R$ 5  : %d\n", nota5);
+    printf("Notas de R$ 2  : %d\n", nota2);
+    printf("Notas de R$ 1  : %d\n", nota1);
+}
+
+int main() {
+
+    int valor;
+
+    printf("Digite o valor que deseja sacar: R$ ");
+    scanf("%d", &valor);
+
+    if (valor <= 0) {
+        printf("Valor invalido!\n");
+    }
+    else {
+        calcular_saque(valor);
+    }
+
+    return 0;
+}
+
 //exercicio 7 e 8
 #include <stdio.h>
 #include <stdlib.h>
