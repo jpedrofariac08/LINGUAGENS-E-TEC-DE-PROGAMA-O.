@@ -122,6 +122,84 @@ void provaA() {
     }
 }
 
+/* ================= PROVA B ================= */
+
+void provaB() {
+    int questao;
+
+    printf("\n===== PROVA B =====\n");
+    printf("0 - Numeros consecutivos\n");
+    printf("1 - IMC\n");
+    printf("2 - Torre de Hanoi\n");
+
+    printf("\nEscolha a questao: ");
+    scanf("%d", &questao);
+
+    if (questao == 0) {
+
+        int n1, n2, n3, n4, n5;
+
+        printf("Digite 5 numeros inteiros: ");
+        scanf("%d %d %d %d %d", &n1, &n2, &n3, &n4, &n5);
+
+        if (n2 == n1 + 1){
+            printf("%d e %d sao consecutivos\n", n1, n2);
+        }
+        if (n3 == n2 + 1){
+            printf("%d e %d sao consecutivos\n", n2, n3);
+        }
+        if (n4 == n3 + 1){
+            printf("%d e %d sao consecutivos\n", n3, n4);
+        }
+        if (n5 == n4 + 1){
+            printf("%d e %d sao consecutivos\n", n4, n5);
+        }
+    }
+
+    else if (questao == 1) {
+
+        float peso, altura, imc;
+
+        printf("Digite o peso: ");
+        scanf("%f", &peso);
+
+        printf("Digite a altura: ");
+        scanf("%f", &altura);
+
+        imc = peso / (altura * altura);
+
+        printf("IMC: %.2f\n", imc);
+
+        if (imc < 18.5){
+            printf("Abaixo do peso\n");
+        }
+        else if (imc <= 24.9){
+            printf("Normal\n");
+        }
+        else if (imc <= 29.9){
+            printf("Acima do peso\n");
+        }
+        else{
+            printf("Obeso\n");
+        }
+    }
+    else if (questao == 2) {
+
+        printf("\nMovimentos da Torre de Hanoi:\n");
+
+        printf("Disco 1: A -> C\n");
+        printf("Disco 2: A -> B\n");
+        printf("Disco 1: C -> B\n");
+        printf("Disco 3: A -> C\n");
+        printf("Disco 1: B -> A\n");
+        printf("Disco 2: B -> C\n");
+        printf("Disco 1: A -> C\n");
+    }
+    else {
+        printf("Questao invalida!\n");
+    }
+}
+
 int main() {
 
     int prova;
