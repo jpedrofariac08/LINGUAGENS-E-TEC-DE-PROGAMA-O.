@@ -200,6 +200,120 @@ void provaB() {
     }
 }
 
+/* ================= PROVA C ================= */
+
+void provaC() {
+    int questao;
+
+    printf("\n===== PROVA C =====\n");
+    printf("0 - Mochilas e sobras\n");
+    printf("1 - Numeros distintos\n");
+    printf("2 - Operadores relacionais\n");
+
+    printf("\nEscolha a questao: ");
+    scanf("%d", &questao);
+
+    if (questao == 0) {
+
+        int itens, capacidade;
+
+        printf("Digite a quantidade de itens: ");
+        scanf("%d", &itens);
+
+        printf("Digite a capacidade da mochila: ");
+        scanf("%d", &capacidade);
+
+        printf("Mochilas preenchidas: %d\n", itens / capacidade);
+        printf("Itens que sobraram: %d\n", itens % capacidade);
+    }
+
+    else if (questao == 1) {
+
+        int a, b, c;
+
+        printf("Digite A: ");
+        scanf("%d", &a);
+
+        printf("Digite B: ");
+        scanf("%d", &b);
+
+        printf("Digite C: ");
+        scanf("%d", &c);
+
+        if (a == b || a == c || b == c) {
+            printf("Os numeros tem que ser distintos\n");
+        }
+        else if (a < b && b < c) {
+            printf("%d %d %d\n", a, b, c);
+        }
+        else if (a < c && c < b) {
+            printf("%d %d %d\n", a, c, b);
+        }
+        else if (b < a && a < c) {
+            printf("%d %d %d\n", b, a, c);
+        }
+        else if (b < c && c < a) {
+            printf("%d %d %d\n", b, c, a);
+        }
+        else if (c < a && a < b) {
+            printf("%d %d %d\n", c, a, b);
+        }
+        else {
+            printf("%d %d %d\n", c, b, a);
+        }
+    }
+
+    else if (questao == 2) {
+
+        float n1, n2;
+        int codigo;
+
+        printf("Digite o primeiro valor: ");
+        scanf("%f", &n1);
+
+        printf("Digite o segundo valor: ");
+        scanf("%f", &n2);
+
+        printf("1 - Maior que\n");
+        printf("2 - Menor que\n");
+        printf("3 - Igual a\n");
+        printf("4 - Diferente de\n");
+
+        printf("Digite o codigo: ");
+        scanf("%d", &codigo);
+
+        if (codigo == 1) {
+            if (n1 > n2)
+                printf("Verdadeiro\n");
+            else
+                printf("Falso\n");
+        }
+        else if (codigo == 2) {
+            if (n1 < n2)
+                printf("Verdadeiro\n");
+            else
+                printf("Falso\n");
+        }
+        else if (codigo == 3) {
+            if (n1 == n2)
+                printf("Verdadeiro\n");
+            else
+                printf("Falso\n");
+        }
+        else if (codigo == 4) {
+            if (n1 != n2)
+                printf("Verdadeiro\n");
+            else
+                printf("Falso\n");
+        }
+        else {
+            printf("Operador invalido\n");
+        }
+    }
+    else {
+        printf("Questao invalida!\n");
+    }
+}
 int main() {
 
     int prova;
