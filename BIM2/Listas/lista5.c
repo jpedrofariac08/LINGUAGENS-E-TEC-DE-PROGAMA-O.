@@ -1,5 +1,6 @@
 #include <stdio.h>
-/*1) Ler 100 números inteiros, imprimir na ordem inversa
+
+/*1) Ler 100 numeros inteiros, imprimir na ordem inversa
  em que foram lidos e ordenar do maior para o menor.*/
 void cemnum() {
     int numeros[100];
@@ -24,10 +25,18 @@ void cemnum() {
         printf("%d ", numeros[contador]);
     }
 }
-/*3) Implemente um programa que leia um numero n
-[com n positivo & n <= 64] e mostre na tela seu
-valor em base binaria(bits). */
 
+/*2) Ler um valor double e imprimir em notacao cientifica.*/
+void cientifica() {
+    double valor;
+
+    printf("Digite um valor positivo: ");
+    scanf("%lf", &valor);
+
+    printf("Notacao cientifica: %.1e\n", valor);
+}
+
+/*3) Ler um numero positivo e mostrar seu valor em binario.*/
 void bin(int n)
 {
     if (n > 1) {
@@ -39,11 +48,14 @@ void bin(int n)
 int main(void)
 {
     int n; // Exemplo: 10 em binario e 1010
-   printf("digite um numero para virar bin: ");
-   scanf("%d", &n);
-   cemnum();
-   printf("\n");
-   bin(n);
+    cemnum();
+    
+    cientifica();
+
+    printf("Digite um numero para virar bin: ");
+    scanf("%d", &n);
+
+    bin(n);
 
     return 0;
 }
